@@ -65,7 +65,7 @@ export function GreetingCard({
 function ClassicFrame({ senderName, recipientName, message, customColors }: any) {
   return (
     <Card
-      className="shadow-lg border-2"
+      className="shadow-lg border-2 bg-white dark:bg-gray-800"
       style={{
         borderColor: customColors.primary,
         background: `linear-gradient(135deg, ${customColors.background}, ${customColors.secondary}20)`,
@@ -102,7 +102,7 @@ function ClassicFrame({ senderName, recipientName, message, customColors }: any)
             borderColor: customColors.secondary,
           }}
         >
-          <p className="text-gray-700 dark:text-gray-300 text-center leading-relaxed">{message}</p>
+          <p className="text-gray-700 dark:text-gray-200 text-center leading-relaxed">{message}</p>
         </div>
 
         <div className="flex justify-center">
@@ -135,7 +135,7 @@ function ClassicFrame({ senderName, recipientName, message, customColors }: any)
 function ElegantFrame({ senderName, recipientName, message, customColors }: any) {
   return (
     <Card
-      className="shadow-xl border-2 relative overflow-hidden"
+      className="shadow-xl border-2 relative overflow-hidden bg-white dark:bg-gray-800"
       style={{
         borderColor: customColors.accent,
         background: `linear-gradient(135deg, ${customColors.background}, ${customColors.primary}10)`,
@@ -176,7 +176,7 @@ function ElegantFrame({ senderName, recipientName, message, customColors }: any)
           <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
             <Star className="h-6 w-6" style={{ color: customColors.accent }} />
           </div>
-          <p className="text-gray-700 dark:text-gray-300 text-center leading-relaxed italic">{message}</p>
+          <p className="text-gray-700 dark:text-gray-200 text-center leading-relaxed italic">{message}</p>
         </div>
 
         <div className="text-center pt-4">
@@ -193,7 +193,7 @@ function ElegantFrame({ senderName, recipientName, message, customColors }: any)
 function ModernFrame({ senderName, recipientName, message, customColors }: any) {
   return (
     <Card
-      className="shadow-2xl border-0 relative overflow-hidden"
+      className="shadow-2xl border-0 relative overflow-hidden bg-white dark:bg-gray-800"
       style={{
         background: `linear-gradient(135deg, ${customColors.background}, ${customColors.primary}15, ${customColors.secondary}10)`,
       }}
@@ -230,7 +230,7 @@ function ModernFrame({ senderName, recipientName, message, customColors }: any) 
           </div>
 
           <div className="p-6 rounded-2xl" style={{ backgroundColor: `${customColors.primary}08` }}>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{message}</p>
+            <p className="text-gray-700 dark:text-gray-200 leading-relaxed">{message}</p>
           </div>
 
           <div className="text-right">
@@ -251,7 +251,7 @@ function ModernFrame({ senderName, recipientName, message, customColors }: any) 
 function OrnateFrame({ senderName, recipientName, message, customColors }: any) {
   return (
     <Card
-      className="shadow-2xl border-4 relative"
+      className="shadow-2xl border-4 relative bg-white dark:bg-gray-800"
       style={{
         borderColor: customColors.accent,
         background: `radial-gradient(circle at center, ${customColors.background}, ${customColors.primary}08)`,
@@ -303,7 +303,7 @@ function OrnateFrame({ senderName, recipientName, message, customColors }: any) 
               <Star className="h-4 w-4 text-white" />
             </div>
           </div>
-          <p className="text-gray-700 dark:text-gray-300 text-center leading-relaxed font-medium">{message}</p>
+          <p className="text-gray-700 dark:text-gray-200 text-center leading-relaxed font-medium">{message}</p>
         </div>
 
         <div className="text-center">
@@ -325,7 +325,7 @@ function OrnateFrame({ senderName, recipientName, message, customColors }: any) 
 function MinimalFrame({ senderName, recipientName, message, customColors }: any) {
   return (
     <Card
-      className="shadow-lg border"
+      className="shadow-lg border bg-white dark:bg-gray-800"
       style={{
         borderColor: customColors.primary,
         backgroundColor: customColors.background,
@@ -347,7 +347,7 @@ function MinimalFrame({ senderName, recipientName, message, customColors }: any)
           </div>
 
           <div className="text-center px-4">
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{message}</p>
+            <p className="text-gray-700 dark:text-gray-200 leading-relaxed">{message}</p>
           </div>
 
           <div className="text-center">
@@ -366,7 +366,7 @@ function MinimalFrame({ senderName, recipientName, message, customColors }: any)
 function WarmFrame({ senderName, recipientName, message, customColors }: any) {
   return (
     <Card
-      className="shadow-xl border-2 relative overflow-hidden"
+      className="shadow-xl border-2 relative overflow-hidden bg-white dark:bg-gray-800"
       style={{
         borderColor: customColors.accent,
         background: `linear-gradient(135deg, ${customColors.background}, ${customColors.primary}10)`,
@@ -405,7 +405,7 @@ function WarmFrame({ senderName, recipientName, message, customColors }: any) {
             borderColor: customColors.accent,
           }}
         >
-          <p className="text-gray-700 dark:text-gray-300 text-center leading-relaxed">{message}</p>
+          <p className="text-gray-700 dark:text-gray-200 text-center leading-relaxed">{message}</p>
         </div>
 
         <div className="text-center">
